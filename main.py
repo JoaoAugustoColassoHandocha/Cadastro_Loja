@@ -48,4 +48,3 @@ while True:
         print('Favor inserir a opção correta!\n')
         defs.Pause()
         defs.Clear()
-        
