@@ -62,7 +62,7 @@ def Register():
     Clear()
     
     logins = open('logins.txt', 'a')
-    logins.write(f'Nome: {name} - Login: {login} - Senha: {password} - Email: {email} - Data de Nascimento: {date} - Telefone: {telephone} - Endereço: {address}\n')
+    logins.write(f'Nome: {name}-Login: {login}-Senha: {password}-Email: {email}-Data de Nascimento: {date}-Telefone: {telephone}-Endereço: {address}\n')
     
     logins.close()
     return
@@ -115,7 +115,7 @@ def ShowsData():
     if not valida:
         
         Clear()
-        print('\nErro! Login ou senha inválidos!')
+        print('\nErro! Login ou senha inválidos!\n')
         Pause()
         Clear()
         
