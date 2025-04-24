@@ -1,3 +1,8 @@
+'''
+This file consists of creating the system menu.
+
+'''
+
 import defs
 
 defs.color()
