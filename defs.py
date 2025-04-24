@@ -4,15 +4,11 @@ def Clear():
     
     return os.system('cls')
 
-def Color():
-    
-    return os.system('color 1f')
-
 def Pause():
     
     return os.system('pause')
 
-Color()
+os.system('color 1f')
 
 date = datetime.datetime.now()
 Day = date.day
@@ -22,11 +18,11 @@ Year = date.year
 def main():
     
     print('\n' + '=' * 10 + 'MENU' + '=' * 10)
-    print('\n[C] - Cadastrar Cliente')
-    print('[D] - Dados do Cliente')
-    print('[B] - Banco de Clientes')
-    print('[R] - Gerar Relatório')
-    print('[S] - Sair\n')
+    print('\n[1] - Cadastrar Cliente')
+    print('[2] - Dados do Cliente')
+    print('[3] - Banco de Clientes')
+    print('[4] - Gerar Relatório')
+    print('[5] - Sair\n')
     print('=' * 24)
     
     op = input('\nInsira a opção: ')
@@ -92,7 +88,9 @@ def ShowsData():
             
             Clear()
             print('\nAcesso Permitido!\n')
-            print('Dados do usuário: ' + '\n')
+            Pause()
+            Clear()
+            print('\nDados do usuário: ' + '\n')
             
             for travel in range(len(values)):
                 
@@ -103,17 +101,13 @@ def ShowsData():
                     for key in dictAddress:
                         
                         print(f'{key}: {dictAddress[key]}')
-                    
-                    Pause()
-                    Clear()
                         
                 else:
                     
                     print(values[travel])
                     
-                    Pause()
-                    Clear()
-                    
+            Pause()
+            Clear()
             valida = True
             logins.close()
             break
@@ -136,10 +130,10 @@ def CustomerRegistrations():
         
         l = line.split('-')
         
-        print(f'{l[0]} | {l[1]}')
+        print(f'{l[0]} | {l[1]}\n')
         
-        Pause()
-        Clear()
+    Pause()
+    Clear()
         
     return
 
@@ -160,15 +154,15 @@ def Report():
     
     file = open('data.txt', 'w+')
     file.write('Relatório de Clientes\n\n')
-    file.write(f'A loja possui {countClient} cliente(s)\n')
+    file.write(f'A loja possui {countClient} cliente(s)\n\n')
     
     for i in range(len(namess)):
         
         file.write(str(f'{i + 1}.{namess[i].split(':')[1]}\n'))
         
-    file.write(f'{Day}/{Month}/{Year}.')
+    file.write(f'\n{Day}/{Month}/{Year}.')
     
-    print('\nRelatório gerado com sucesso!')
+    print('\nRelatório gerado com sucesso!\n')
     
     Pause()
     Clear()

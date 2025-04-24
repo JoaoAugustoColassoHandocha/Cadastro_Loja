@@ -3,9 +3,9 @@ This file consists of creating the system menu.
 
 '''
 
-import defs
+import defs, os
 
-defs.Color()
+os.system('color 1f')
 
 defs.Clear()
 
@@ -13,30 +13,30 @@ while True:
     
     choice = defs.main()
     
-    if choice == 'C' or 'c':
+    if choice == '1':
         
         defs.Clear()
         defs.Register()
     
-    elif choice == 'D' or 'd':
+    elif choice == '2':
         
         defs.Clear()
         defs.ShowsData()
         
-    elif choice == 'B' or 'b':
+    elif choice == '3':
         
         defs.Clear()
         defs.CustomerRegistrations()
     
-    elif choice == 'R' or 'r':
+    elif choice == '4':
         
         defs.Clear()
         defs.Report()
     
-    elif choice == 'S' or 's':
+    elif choice == '5':
         
         defs.Clear()
-        print('\nSaindo...')
+        print('\nSaindo...\n')
         defs.Pause()
         defs.Clear()
         break

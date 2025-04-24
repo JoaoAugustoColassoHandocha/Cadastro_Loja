@@ -1,6 +1,6 @@
-import defs, getpass
+import defs, getpass, os
 
-defs.Color()
+os.system('color 1f')
 
 def Name():
     
@@ -34,7 +34,6 @@ def Name():
 def Password():
     
     while True:
-        
         
         password = getpass.getpass('\nSenha: ')
         
@@ -139,7 +138,7 @@ def Telephone():
     
     while True:
         
-        telephone = input('Telefone (Apenas Números): ')
+        telephone = input('\nTelefone (Apenas Números): ')
         
         if telephone == '':
             
@@ -177,12 +176,12 @@ def Address():
         data = {
             
             'Road': input('\nRua: '),
-            'Number': input('Número: '),
-            'Complement': input('Complemento: '),
-            'Neighborhood': input('Bairro: '),
-            'CEP': input('CEP: '),
-            'City': input('Cidade: '),
-            'Reference': input('Referência: '),
+            'Number': input('\nNúmero: '),
+            'Complement': input('\nComplemento: '),
+            'Neighborhood': input('\nBairro: '),
+            'CEP': input('\nCEP: '),
+            'City': input('\nCidade: '),
+            'Reference': input('\nReferência: '),
             
         }
         
