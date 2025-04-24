@@ -5,7 +5,7 @@ This file consists of creating the system menu.
 
 import defs
 
-defs.color()
+defs.Color()
 
 defs.Clear()
 
@@ -23,7 +23,7 @@ while True:
         defs.Clear()
         defs.ShowsData()
         
-    elif choice == 'M' or 'm':
+    elif choice == 'B' or 'b':
         
         defs.Clear()
         defs.CustomerRegistrations()
@@ -31,7 +31,7 @@ while True:
     elif choice == 'R' or 'r':
         
         defs.Clear()
-        defs.report()
+        defs.Report()
     
     elif choice == 'S' or 's':
         
