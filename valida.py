@@ -25,6 +25,7 @@ def Name():
                 defs.Clear()
                 print('\nDigite um nome válido!\n')
                 defs.Pause()
+                defs.Clear()
                 break
             
         else:
